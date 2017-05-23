@@ -41,15 +41,15 @@ def test_filterpy_version():
 
     import filterpy
     from distutils.version import LooseVersion
-
-    v = filterpy.__version__
+'''
+   # v = filterpy.__version__
     min_version = "0.1.2"
     if LooseVersion(v) < LooseVersion(min_version):
        raise Exception("Minimum FilterPy version supported is {}.\n"
                        "Please install a more recent version.\n"
                        "   ex: pip install filterpy --upgrade".format(
              min_version))
-
+'''
 
 # ensure that we have the correct filterpy loaded. This is
 # called when this module is imported at the top of each book
